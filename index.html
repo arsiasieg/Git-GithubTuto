@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Git and Github - and the House moves</title>
+</head>
+<header>
+    <img src="img/git.png" alt="logo git" class="logo">
+    <div class="title-header">
+        <div class="main-title">Git and Github</div>
+        <div class="subtitle">and the House moves</div>
+    </div>
+    <img src="img/github.png" alt="logo github" class="logo"> 
+</header>
+<body>
+    <div class="repository git">
+        <div class="title-repository">
+            <img src="img/git.png" alt="logo github" class="logo onBorder git"></img>
+            <p class="block-title bg-red">Repo local</p>
+        </div>
+        <div class = "content">
+            <img src="img/folder.png" alt="folder" class="folder">
+            <p>Your folder</p>
+            <div class="transition">
+                <div class="commande-description-init">Git va venir "surveiller les fichiers" de ce dossier.</div>
+                <img src="/img/arrowDown.png" alt="Folder -> Staging" class="arrow"/>
+                <div class="commande">
+                    <button class="git-init-button">git init
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="work-directory">
+                <p class="block-subtitle">Work directory</p>
+                <img src="img/folder.png" alt="Folder + fichier .git = Work directory" class="folder">
+                <p>Repository</p>
+                <div class="description">Un fichier caché (.git) va être créer : Git va donc "surveiller" le dossier et commencer à faire du "versioning".</div>
+            </div>
+
+            <div class="transition">
+                <div class="commande-description-add">Git va répérer et stocker les modifications apportées.</div>
+                <img src="/img/arrowDown.png" alt="Folder -> Staging" class="arrow"/>
+                <div class="commande">
+                    <button class="git-add-button">git add .
+                    </button>
+                </div>
+            </div>
+
+            <div class="staging">
+                <p class="block-subtitle">Stage</p>
+                <img src="img/folder.png" alt="Staging = salle d'attente" class="folder">
+                <div class="description">C'est ici, dans le stage, que les modifications vont être "mise en attente".</div>
+            </div>
+
+            <div class="transition">
+                <div class="commande-description-commit">Si toutes les modifications en attente sont validées, elles sont alors envoyées vers le head.</div>
+                <img src="/img/arrowDown.png" alt="Folder -> Staging" class="arrow"/>
+                <div class="commande">
+                    <button class="git-commit-button">git commit -m "message"
+                    </button>
+                </div>
+            </div>
+
+            <div class="head">
+                <p class="block-subtitle">Head</p>
+                <img src="img/folder.png" alt="Staging = salle d'attente" class="folder">
+                <div class="description">Les modifications ont bien été enregistrés. Un historique de version en local est alors disponible.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class ="repository github">
+        <div class="title-repository">
+            <img src="img/github.png" alt="logo github" class="logo onBorder github"></img>
+            <p class="block-title bg-purple">Repo distant</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
